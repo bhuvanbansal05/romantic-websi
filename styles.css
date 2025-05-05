@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+header {
+    background-color: #ff88cc;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Hero section */
+.hero {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #ff88cc, #ff67b2);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* Floating emojis */
+.floating-elements div {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 10s ease-in-out infinite;
+}
+
+.heart {
+    content: "💖";  /* Heart emoji */
+    animation-duration: 5s;
+}
+
+.butterfly {
+    content: "🦋";  /* Butterfly emoji */
+    animation-duration: 6s;
+}
+
+.star {
+    content: "⭐";  /* Star emoji */
+    animation-duration: 8s;
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #ff88cc;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
